@@ -3,17 +3,17 @@ public class Main {
 
         //Первая задача
 
-        int[] x = new int[] {1,2,3};
+        int[] INT = new int[] {1,2,3};
 
-        double[] y = new double[] {1.57, 7.654, 9.986};
+        double[] DOUBLE = {1.57, 7.654, 9.986};
 
-        String[] z = new String[] {"1","2","3"};
+        String[] strings = new String[] {"1","2","3"};
 
         //Вторая задача
 
-        for(int i = 0;i < x.length;i++){
-            System.out.print(x[i]);
-            if (i != x.length-1){
+        for(int i = 0;i < INT.length;i++){
+            System.out.print(INT[i]);
+            if (i != INT.length-1){
                 System.out.print(",");
             }
             else{
@@ -21,9 +21,9 @@ public class Main {
             }
         }
 
-        for(int i = 0;i < y.length;i++){
-            System.out.print(y[i]);
-            if (i != y.length-1){
+        for(int i = 0;i < DOUBLE.length;i++){
+            System.out.print(DOUBLE[i]);
+            if (i != DOUBLE.length-1){
                 System.out.print(",");
             }
             else{
@@ -31,9 +31,9 @@ public class Main {
             }
         }
 
-        for(int i = 0;i < z.length;i++){
-            System.out.print(z[i]);
-            if (i != z.length-1){
+        for(int i = 0;i < strings.length;i++){
+            System.out.print(strings[i]);
+            if (i != strings.length-1){
                 System.out.print(",");
             }
             else{
@@ -43,8 +43,8 @@ public class Main {
 
         //Третья задача
 
-        for(int i = x.length;i > 0;i--){
-            System.out.print(x[i-1]);
+        for(int i = INT.length;i > 0;i--){
+            System.out.print(INT[i-1]);
             if (i != 1){
                 System.out.print(",");
             }
@@ -53,8 +53,8 @@ public class Main {
             }
         }
 
-        for(int i = y.length;i > 0;i--){
-            System.out.print(y[i-1]);
+        for(int i = DOUBLE.length;i > 0;i--){
+            System.out.print(DOUBLE[i-1]);
             if (i != 1){
                 System.out.print(",");
             }
@@ -63,8 +63,8 @@ public class Main {
             }
         }
 
-        for(int i = z.length;i > 0;i--){
-            System.out.print(z[i-1]);
+        for(int i = strings.length;i > 0;i--){
+            System.out.print(strings[i-1]);
             if (i != 1){
                 System.out.print(",");
             }
@@ -75,11 +75,11 @@ public class Main {
 
         //Задание 4
 
-        for (int i = 0; i < x.length; i++) {
-            if (x[i] % 2 == 1){
-                x[i]++;
+        for (int i = 0; i < INT.length; i++) {
+            if (INT[i] % 2 == 1){
+                INT[i]++;
             }
-            System.out.print(x[i]+" ");
+            System.out.print(INT[i]+" ");
         }
     }
 }
