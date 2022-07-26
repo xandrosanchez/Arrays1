@@ -3,17 +3,21 @@ public class Main {
 
         //Первая задача
 
-        int[] INT = new int[] {1,2,3};
+        int[] first_variable = new int[] {1,2,3};
 
-        double[] DOUBLE = {1.57, 7.654, 9.986};
+        double[] second_variable;
+        second_variable = new double[3];
+        second_variable[0] = 1.57;
+        second_variable[1] = 7.654;
+        second_variable[2] = 9.986;
 
         String[] strings = new String[] {"1","2","3"};
 
         //Вторая задача
 
-        for(int i = 0;i < INT.length;i++){
-            System.out.print(INT[i]);
-            if (i != INT.length-1){
+        for(int i = 0;i < first_variable.length;i++){
+            System.out.print(first_variable[i]);
+            if (i != first_variable.length-1){
                 System.out.print(",");
             }
             else{
@@ -21,9 +25,9 @@ public class Main {
             }
         }
 
-        for(int i = 0;i < DOUBLE.length;i++){
-            System.out.print(DOUBLE[i]);
-            if (i != DOUBLE.length-1){
+        for(int i = 0;i < second_variable.length;i++){
+            System.out.print(second_variable[i]);
+            if (i != second_variable.length-1){
                 System.out.print(",");
             }
             else{
@@ -43,8 +47,8 @@ public class Main {
 
         //Третья задача
 
-        for(int i = INT.length;i > 0;i--){
-            System.out.print(INT[i-1]);
+        for(int i = first_variable.length;i > 0;i--){
+            System.out.print(first_variable[i-1]);
             if (i != 1){
                 System.out.print(",");
             }
@@ -53,8 +57,8 @@ public class Main {
             }
         }
 
-        for(int i = DOUBLE.length;i > 0;i--){
-            System.out.print(DOUBLE[i-1]);
+        for(int i = second_variable.length;i > 0;i--){
+            System.out.print(second_variable[i-1]);
             if (i != 1){
                 System.out.print(",");
             }
@@ -75,11 +79,11 @@ public class Main {
 
         //Задание 4
 
-        for (int i = 0; i < INT.length; i++) {
-            if (INT[i] % 2 == 1){
-                INT[i]++;
+        for (int i = 0; i < first_variable.length; i++) {
+            if (first_variable[i] % 2 == 1){
+                first_variable[i]++;
             }
-            System.out.print(INT[i]+" ");
+            System.out.print(first_variable[i]+" ");
         }
     }
 }
